@@ -1,3 +1,4 @@
+/* ====== GLOBAL RESET ====== */
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +21,7 @@ img {
   max-width: 100%;
 }
 
-/* ==== HEADER ==== */
+/* ====== HEADER ====== */
 header {
   position: absolute;
   top: 0;
@@ -59,16 +60,17 @@ header nav ul li a:hover {
   opacity: 0.7;
 }
 
-/* ==== HERO SECTION ==== */
+/* ====== HERO + LEARN FROM THE PROS (same background) ====== */
 .hero-wrapper {
-  height: 100vh;
-  background: url("assests/Images/Object.png") center/cover no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  background: url("assests/Images/Object.png") center top / cover no-repeat;
+  padding-top: 150px; /* give some breathing space for header */
+  padding-bottom: 100px;
+}
+
+/* HERO SECTION INSIDE hero-wrapper */
+.hero {
   text-align: center;
-  position: relative;
+  margin-bottom: 120px; /* space before pros section */
 }
 
 .hero h1 {
@@ -82,7 +84,7 @@ header nav ul li a:hover {
 }
 
 .hero-tags span {
-  margin: 0 10px;
+  margin: 0 15px;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -105,16 +107,14 @@ header nav ul li a:hover {
   background: #a957e0;
 }
 
-/* ==== LEARN FROM THE PROS ==== */
+/* LEARN FROM THE PROS INSIDE hero-wrapper */
 .pros {
-  background: #071629;
   text-align: center;
-  padding: 80px 20px;
 }
 
 .pros h2 {
   font-size: 32px;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   color: #fff;
 }
 
@@ -152,7 +152,7 @@ header nav ul li a:hover {
   opacity: 0.8;
 }
 
-/* ==== TESTIMONIAL SECTION ==== */
+/* ====== TESTIMONIAL SECTION ====== */
 .testimonial {
   background: #C271FF;
   display: flex;
@@ -189,7 +189,7 @@ header nav ul li a:hover {
   opacity: 0.9;
 }
 
-/* ==== MOST POPULAR TUTORIALS ==== */
+/* ====== MOST POPULAR TUTORIALS ====== */
 .tutorials {
   background: #fff;
   color: #000;
@@ -266,7 +266,7 @@ header nav ul li a:hover {
   color: #555;
 }
 
-/* ==== FREE MEMBERSHIP ==== */
+/* ====== FREE MEMBERSHIP ====== */
 .membership {
   background: #071629;
   color: #fff;
@@ -322,7 +322,7 @@ header nav ul li a:hover {
   background: #a957e0;
 }
 
-/* ==== FAQ ==== */
+/* ====== FAQ ====== */
 .faq {
   background: #fff;
   color: #000;
@@ -354,7 +354,7 @@ header nav ul li a:hover {
   color: #555;
 }
 
-/* ==== FOOTER ==== */
+/* ====== FOOTER ====== */
 footer {
   background: #071629;
   color: #fff;
