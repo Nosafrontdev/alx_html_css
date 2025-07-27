@@ -6,9 +6,9 @@
 }
 
 body {
-  font-family: 'Source Sans Pro', Arial, sans-serif; /* matches Figma font */
+  font-family: 'Source Sans Pro', Arial, sans-serif;
   color: #fff;
-  background: #000;
+  background: #000; /* Default fallback */
 }
 
 /* === HEADER === */
@@ -28,12 +28,12 @@ header nav {
 }
 
 header nav img {
-  height: 40px; /* matches Figma */
+  height: 40px;
 }
 
 header nav ul {
   display: flex;
-  gap: 40px; /* spacing between links */
+  gap: 40px;
   list-style: none;
 }
 
@@ -50,10 +50,15 @@ header nav ul li a:hover {
   opacity: 0.7;
 }
 
+/* === ONE SHARED BACKGROUND FOR HERO + PROS === */
+.hero-wrapper {
+  background: url("assests/Images/Object.png") center center/cover no-repeat;
+  width: 100%;
+}
+
 /* === HERO SECTION === */
 .hero {
   height: 100vh;
-  background: url("assests/Images/Object.png") center center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,7 +88,7 @@ header nav ul li a:hover {
 .hero-content button {
   margin-top: 30px;
   padding: 16px 50px;
-  background: #C271FF; /* Purple from Figma */
+  background: #C271FF;
   color: #fff;
   border: none;
   border-radius: 30px;
@@ -97,9 +102,8 @@ header nav ul li a:hover {
   background: #a957e0;
 }
 
-/* === LEARN FROM THE PROS SECTION === */
+/* === LEARN FROM THE PROS === */
 .pros {
-  background: #000;
   text-align: center;
   padding: 100px 20px;
 }
@@ -107,7 +111,7 @@ header nav ul li a:hover {
 .pros h2 {
   font-size: 32px;
   font-weight: 700;
-  color: #C271FF;
+  color: #C271FF; /* Matches Figma heading color */
   margin-bottom: 80px;
 }
 
