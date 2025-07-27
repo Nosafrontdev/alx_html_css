@@ -11,10 +11,4 @@ It demonstrates a clean layout with a header, main content, sidebar, and footer,
 ✅ Styled Table – Neatly organized tabular data
 ✅ Custom Logo – Unicode-based logo for a simple unique touch
 
-🛠️ Technologies Used
-HTML5 – Semantic structure
-
-CSS3 – Flexbox for layout + custom styling
-
-Responsive Design – meta viewport for mobile-friendly scaling
 
