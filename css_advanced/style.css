@@ -1,4 +1,3 @@
-/* === RESET === */
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +7,8 @@
 body {
   font-family: 'Source Sans Pro', Arial, sans-serif;
   color: #fff;
-  background: #000; /* Default fallback */
+  background: #000;
+  line-height: 1.5;
 }
 
 /* === HEADER === */
@@ -50,10 +50,9 @@ header nav ul li a:hover {
   opacity: 0.7;
 }
 
-/* === ONE SHARED BACKGROUND FOR HERO + PROS === */
+/* === HERO + PROS BACKGROUND === */
 .hero-wrapper {
   background: url("assests/Images/Object.png") center center/cover no-repeat;
-  width: 100%;
 }
 
 /* === HERO SECTION === */
@@ -102,7 +101,7 @@ header nav ul li a:hover {
   background: #a957e0;
 }
 
-/* === LEARN FROM THE PROS === */
+/* === LEARN FROM THE PROS SECTION === */
 .pros {
   text-align: center;
   padding: 100px 20px;
@@ -111,7 +110,7 @@ header nav ul li a:hover {
 .pros h2 {
   font-size: 32px;
   font-weight: 700;
-  color: #C271FF; /* Matches Figma heading color */
+  color: #C271FF;
   margin-bottom: 80px;
 }
 
@@ -149,4 +148,43 @@ header nav ul li a:hover {
   font-weight: 400;
   opacity: 0.8;
   color: #fff;
+}
+
+/* === TESTIMONIAL SECTION === */
+.testimonial {
+  background: #C271FF; /* Purple background */
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  gap: 40px;
+}
+
+.testimonial img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.testimonial-text blockquote {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+.testimonial-text h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.testimonial-text .role {
+  font-size: 16px;
+  font-style: italic;
+  opacity: 0.9;
 }
