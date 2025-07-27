@@ -6,12 +6,21 @@
 
 body {
   font-family: 'Source Sans Pro', Arial, sans-serif;
-  color: #fff;
   background: #000;
+  color: #fff;
   line-height: 1.5;
 }
 
-/* === HEADER === */
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ==== HEADER ==== */
 header {
   position: absolute;
   top: 0;
@@ -33,16 +42,16 @@ header nav img {
 
 header nav ul {
   display: flex;
-  gap: 40px;
   list-style: none;
+  gap: 40px;
 }
 
 header nav ul li a {
-  font-size: 14px;
-  font-weight: 700;
-  color: #fff;
   text-decoration: none;
+  color: #fff;
+  font-weight: 700;
   letter-spacing: 1px;
+  font-size: 14px;
   transition: opacity 0.3s ease;
 }
 
@@ -50,42 +59,37 @@ header nav ul li a:hover {
   opacity: 0.7;
 }
 
-/* === HERO + PROS BACKGROUND === */
+/* ==== HERO SECTION ==== */
 .hero-wrapper {
-  background: url("assests/Images/Object.png") center center/cover no-repeat;
-}
-
-/* === HERO SECTION === */
-.hero {
   height: 100vh;
+  background: url("assests/Images/Object.png") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   text-align: center;
-  padding: 0 1rem;
+  position: relative;
 }
 
-.hero-content h1 {
+.hero h1 {
   font-size: 64px;
   font-weight: 900;
-  line-height: 1.2;
   margin-bottom: 20px;
 }
 
 .hero-tags {
-  margin-top: 10px;
+  margin: 10px 0 30px;
 }
 
 .hero-tags span {
+  margin: 0 10px;
   font-size: 18px;
   font-weight: 600;
-  margin: 0 15px;
   letter-spacing: 2px;
   opacity: 0.85;
 }
 
-.hero-content button {
-  margin-top: 30px;
+.hero button {
   padding: 16px 50px;
   background: #C271FF;
   color: #fff;
@@ -97,68 +101,66 @@ header nav ul li a:hover {
   transition: background 0.3s ease;
 }
 
-.hero-content button:hover {
+.hero button:hover {
   background: #a957e0;
 }
 
-/* === LEARN FROM THE PROS SECTION === */
+/* ==== LEARN FROM THE PROS ==== */
 .pros {
+  background: #071629;
   text-align: center;
-  padding: 100px 20px;
+  padding: 80px 20px;
 }
 
 .pros h2 {
   font-size: 32px;
-  font-weight: 700;
+  margin-bottom: 60px;
+  color: #fff;
+}
+
+.pros h2 span {
   color: #C271FF;
-  margin-bottom: 80px;
 }
 
 .pros-grid {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   gap: 60px;
   flex-wrap: wrap;
 }
 
 .pro-card {
   max-width: 200px;
-  text-align: center;
 }
 
 .pro-card img {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 20px;
+  border-radius: 50%;
   border: 3px solid #C271FF;
+  margin-bottom: 20px;
 }
 
 .pro-card h3 {
   font-size: 18px;
-  font-weight: 600;
   margin-bottom: 8px;
-  color: #fff;
 }
 
 .pro-card p {
   font-size: 14px;
-  font-weight: 400;
   opacity: 0.8;
-  color: #fff;
 }
 
-/* === TESTIMONIAL SECTION === */
+/* ==== TESTIMONIAL SECTION ==== */
 .testimonial {
-  background: #C271FF; /* Purple background */
-  padding: 80px 20px;
+  background: #C271FF;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: left;
+  padding: 80px 20px;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .testimonial img {
@@ -166,25 +168,220 @@ header nav ul li a:hover {
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  flex-shrink: 0;
 }
 
-.testimonial-text blockquote {
-  font-size: 18px;
-  font-weight: 400;
-  color: #fff;
-  margin-bottom: 20px;
+.testimonial-text {
   max-width: 600px;
 }
 
-.testimonial-text h3 {
+.testimonial-text blockquote {
   font-size: 20px;
-  font-weight: 700;
-  color: #fff;
+  margin-bottom: 20px;
+}
+
+.testimonial-text h3 {
+  font-size: 22px;
 }
 
 .testimonial-text .role {
   font-size: 16px;
   font-style: italic;
   opacity: 0.9;
+}
+
+/* ==== MOST POPULAR TUTORIALS ==== */
+.tutorials {
+  background: #fff;
+  color: #000;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.tutorials h2 {
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+
+.tutorials h2 span {
+  color: #C271FF;
+}
+
+.tutorials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.tutorial-card {
+  background: #fff;
+  text-align: left;
+}
+
+.tutorial-card img {
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.tutorial-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.tutorial-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.author h4 {
+  font-size: 14px;
+  color: #C271FF;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #C271FF;
+}
+
+.rating span {
+  margin-left: auto;
+  font-size: 14px;
+  color: #555;
+}
+
+/* ==== FREE MEMBERSHIP ==== */
+.membership {
+  background: #071629;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.membership h2 {
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+
+.membership h2 span {
+  color: #C271FF;
+}
+
+.membership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto 50px;
+}
+
+.membership-grid img {
+  width: 50px;
+  margin: 0 auto 15px;
+}
+
+.membership-grid h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.membership-grid p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.membership button {
+  margin-top: 30px;
+  padding: 16px 50px;
+  background: #C271FF;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.membership button:hover {
+  background: #a957e0;
+}
+
+/* ==== FAQ ==== */
+.faq {
+  background: #fff;
+  color: #000;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.faq h2 {
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-grid h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.faq-grid p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ==== FOOTER ==== */
+footer {
+  background: #071629;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto 20px;
+  flex-wrap: wrap;
+}
+
+.footer-top img {
+  height: 40px;
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+
+footer p {
+  font-size: 14px;
+  opacity: 0.7;
 }
