@@ -193,3 +193,83 @@ body {
     grid-template-columns: 1fr;
   }
 }
+.our-results {
+  position: relative;
+  background: url("images/headphones_hero_2.jpg") no-repeat center center/cover;
+  color: var(--text-color);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.our-results .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.results-content {
+  position: relative;
+  z-index: 1;
+}
+
+.results-content .section-title {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.results-content .section-intro {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+
+.results-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.result-item p {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* Pentagon image wrapper */
+.pentagon-wrapper {
+  position: relative;
+  width: 120px;   /* Adjust width/height as needed */
+  height: 120px;
+  margin: 0 auto 15px;
+}
+
+.pentagon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.pentagon-wrapper h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #fff; /* Make sure this contrasts well with your pentagon image */
+  font-size: 24px;
+  pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .results-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
